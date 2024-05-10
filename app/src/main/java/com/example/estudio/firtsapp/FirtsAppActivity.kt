@@ -10,26 +10,38 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.estudio.R
+import com.google.firebase.auth.FirebaseAuth
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
+import androidx.activity.enableEdgeToEdge
+import androidx.activity.enableEdgeToEdge
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
 class FirtsAppActivity : AppCompatActivity() {
+
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var authStateListener: FirebaseAuth.AuthStateListener
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_firts_app)  // Mueve esta línea al principio
 
-        val btnStart = findViewById<AppCompatButton>(R.id.btnStart)
-        val etName = findViewById<AppCompatEditText>(R.id.etName)
-        val  etUsername = findViewById<EditText>(R.id.etUsername)
+        val btnIngresar = findViewById<AppCompatButton>(R.id.btnStart)
+        val txtpass = findViewById<AppCompatEditText>(R.id.etName)
+        val  txtemail = findViewById<EditText>(R.id.etUsername)
+        val textView7 = findViewById<TextView>(R.id.tvOlvd)
 
-        btnStart.setOnClickListener {
-            val username = etUsername.text.toString() // Obtener el nombre de usuario ingresado
-            val password = etName.text.toString() // Obtener la contraseña ingresada
+        textView7.setOnClickListener {
+            val intent = Intent(this, OlvActivity::class.java)
+            startActivity(intent)
+        }
+        firebaseAuth = Firebase.auth
 
-            if (username.isNotEmpty() && password.isNotEmpty()) { // Verificar si ambos campos no están vacíos
-                // Si ambos campos no están vacíos, iniciar la actividad ResultActivity
-                val intent = Intent(this, ResultActivity::class.java)
-                startActivity(intent)
-            }
+        btnIngresar.setOnClickListener(){
+            signIn(txtemail.text.toString(), txtpass.text.toString())
         }
 
         enableEdgeToEdge()
@@ -41,5 +53,17 @@ class FirtsAppActivity : AppCompatActivity() {
         }
     }
 
+    private fun signIn(email: String, password: String){
+        firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this){ task ->
+            if(task.isSuccessful){
+                val user = firebaseAuth.currentUser
+                val intent = Intent(this, ResultActivity::class.java)
+                startActivity(intent)
+            }else{
+                Toast.makeText(baseContext, "error de email y/o contraseña", Toast.LENGTH_SHORT).show()
+
+            }
+        }
+    }
 
 }

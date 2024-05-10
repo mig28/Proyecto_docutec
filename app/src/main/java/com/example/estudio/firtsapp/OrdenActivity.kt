@@ -10,17 +10,16 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.estudio.R
 
-class FacturaActivity : AppCompatActivity() {
+class OrdenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_factura)
+        setContentView(R.layout.activity_orden)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         // Obtener una referencia al botón desde el layout
         val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
         val btnAnterior = findViewById<Button>(R.id.btnAnterior)
@@ -31,11 +30,10 @@ class FacturaActivity : AppCompatActivity() {
             mostrarAlerta()
         }
         btnAnterior.setOnClickListener {
-            val intent = Intent(this, ResultActivity::class.java)
+            val intent = Intent(this, ProduccionActivity::class.java)
             startActivity(intent)
         }
     }
-
     private fun mostrarAlerta() {
         // Crear una instancia de AlertDialog.Builder
         val builder = AlertDialog.Builder(this)
@@ -56,4 +54,5 @@ class FacturaActivity : AppCompatActivity() {
         val dialog = builder.create()
         dialog.show()
     }
+
 }

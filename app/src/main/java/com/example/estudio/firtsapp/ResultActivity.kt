@@ -3,6 +3,8 @@ package com.example.estudio.firtsapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -30,10 +32,55 @@ class ResultActivity : AppCompatActivity() {
         val button9 = findViewById<Button>(R.id.button9)
         val button10 = findViewById<Button>(R.id.button10)
         val button11 = findViewById<Button>(R.id.button11)
+        val imageDocum = findViewById<ImageView>(R.id.imageDocum)
+        val textView7 = findViewById<TextView>(R.id.textView5)
+        val textViewPerfil = findViewById<TextView>(R.id.textView7)
+        val imageUsuario = findViewById<ImageView>(R.id.imageUsuar)
+
 
         // Configurar el OnClickListener para el button2 después de inflar el diseño
         button2.setOnClickListener {
             val intent = Intent(this, FacturaActivity::class.java)
+            startActivity(intent)
+        }
+
+
+// Configurar el OnClickListener para el button4 después de inflar el diseño
+        button4.setOnClickListener {
+            val intent = Intent(this, MemorandoActivity::class.java)
+            startActivity(intent)
+        }
+        button5.setOnClickListener {
+            val intent = Intent(this, CompraActivity::class.java)
+            startActivity(intent)
+        }
+        button8.setOnClickListener {
+            val intent = Intent(this, ProduccionActivity::class.java)
+            startActivity(intent)
+        }
+        button9.setOnClickListener {
+            val intent = Intent(this, VentasActivity::class.java)
+            startActivity(intent)
+        }
+        imageDocum.setOnClickListener {
+            val intent = Intent(this, DocumentoActivity::class.java)
+            startActivity(intent)
+        }
+
+// Configurar OnClickListener para el TextView
+        textView7.setOnClickListener {
+            val intent = Intent(this, DocumentoActivity::class.java)
+            startActivity(intent)
+        }
+
+        textViewPerfil.setOnClickListener {
+            val intent = Intent(this, PerfilActivity::class.java)
+            startActivity(intent)
+        }
+
+// Configurar OnClickListener para el ImageView
+        imageUsuario.setOnClickListener {
+            val intent = Intent(this, PerfilActivity::class.java)
             startActivity(intent)
         }
 

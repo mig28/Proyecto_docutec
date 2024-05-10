@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="60dp"
-            android:text="Factura"
+            android:text="Memorando"
             android:textColor="@color/white"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -56,7 +56,7 @@
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre de la empresa o cliente que realiza la compra."
+            android:text="Nombre completo de la persona."
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -68,7 +68,6 @@
             android:layout_marginBottom="45dp"
             android:background="@drawable/btn_txtarea"
             android:hint="  Nombre"
-            android:textColor="@android:color/black"
             android:inputType="text"
             android:maxLines="1"
             android:singleLine="true"
@@ -88,7 +87,7 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Direccion de la empresa o cliente que realiza la compra."
+            android:text="cargo."
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -96,7 +95,6 @@
         <EditText
             android:id="@+id/etName1"
             android:layout_width="342dp"
-            android:textColor="@android:color/black"
             android:layout_height="45dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/btn_txtarea"
@@ -121,7 +119,7 @@
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Numero de la factura"
+            android:text="Descripcion del tema a tratar"
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -131,7 +129,6 @@
             android:layout_width="342dp"
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"
-            android:textColor="@android:color/black"
             android:background="@drawable/btn_txtarea"
             android:hint="  Numero factura"
             android:inputType="text"
@@ -154,7 +151,7 @@
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fecha emision"
+            android:text="Asunto del memorando"
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -163,7 +160,6 @@
             android:id="@+id/etName4"
             android:layout_width="342dp"
             android:layout_height="50dp"
-            android:textColor="@android:color/black"
             android:layout_marginBottom="50dp"
             android:background="@drawable/btn_txtarea"
             android:hint="  Fecha emision"
@@ -187,7 +183,7 @@
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Precio total"
+            android:text="Detalles y explicacion"
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -196,7 +192,6 @@
             android:id="@+id/etName5"
             android:layout_width="342dp"
             android:layout_height="50dp"
-            android:textColor="@android:color/black"
             android:layout_marginBottom="80dp"
             android:background="@drawable/btn_txtarea"
             android:hint="  Precio"

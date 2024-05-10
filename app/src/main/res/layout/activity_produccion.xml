@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".firtsapp.ResultActivity">
+    tools:context=".firtsapp.ProduccionActivity">
+
 
     <TextView
         android:id="@+id/tvResult"
@@ -36,81 +37,26 @@
 
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- LinearLayout horizontal para los botones -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/tvResult"/>
-
-    <Button
-        android:id="@+id/btnInicio"
-        android:layout_width="120dp"
-        android:layout_height="37dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/green"
-
-        android:text="Finanzas"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
-
-    <Button
-        android:id="@+id/btnDeberes"
-        android:layout_width="120dp"
-        android:layout_height="37dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/green"
-        android:text="Contratos"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
-
-    <Button
-        android:id="@+id/btnDerechos"
-        android:layout_width="120dp"
-        android:layout_height="37dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/green"
-        android:text="RRHH"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.971"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mas utilizados"
+        android:layout_marginTop="128dp"
+        android:text="Produccion"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="127dp"
         android:layout_height="42dp"
         android:backgroundTint="@color/gray_90"
-        android:text="Factura"
+        android:text="orden"
         android:textColor="@color/green"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,7 +73,7 @@
         android:backgroundTint="@color/gray_90"
         android:textColor="@color/green"
         android:textStyle="bold"
-        android:text="Recibo"
+        android:text="Materiales"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.834"
@@ -140,7 +86,7 @@
         android:layout_width="127dp"
         android:layout_height="42dp"
         android:backgroundTint="@color/gray_90"
-        android:text="Memorando"
+        android:text="Informe"
         android:textColor="@color/green"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -155,7 +101,7 @@
         android:layout_width="127dp"
         android:layout_height="42dp"
         android:backgroundTint="@color/gray_90"
-        android:text="compra"
+        android:text="Seguridad"
         android:textColor="@color/green"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -170,7 +116,7 @@
         android:layout_width="127dp"
         android:layout_height="42dp"
         android:backgroundTint="@color/gray_90"
-        android:text="Contrato"
+        android:text="Calidad"
         android:textColor="@color/green"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -185,7 +131,7 @@
         android:layout_width="127dp"
         android:layout_height="42dp"
         android:backgroundTint="@color/gray_90"
-        android:text="informe"
+        android:text="Fabricacion"
         android:textColor="@color/green"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -194,81 +140,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.542" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Departamentos"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.632" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="127dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/gray_90"
-        android:text="Produccion"
-        android:textColor="@color/green"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="127dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/gray_90"
-        android:text="Ventas"
-        android:textColor="@color/green"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.834"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="127dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/gray_90"
-        android:text="Gerencia"
-        android:textColor="@color/green"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="127dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/gray_90"
-        android:text="Servicio"
-        android:textColor="@color/green"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.834"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84" />
 
     <View
         android:id="@+id/topBar"
@@ -391,5 +262,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.989" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

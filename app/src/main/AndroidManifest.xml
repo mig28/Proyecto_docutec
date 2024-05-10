@@ -12,7 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudio"
         tools:targetApi="31">
-
+        <activity
+            android:name=".firtsapp.OlvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firtsapp.PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firtsapp.DocumentoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firtsapp.VentasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firtsapp.OrdenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firtsapp.ProduccionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firtsapp.CompraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firtsapp.MemorandoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firtsapp.ReciboActivity"
+            android:exported="false" />
         <activity
             android:name=".firtsapp.FacturaActivity"
             android:exported="false" />

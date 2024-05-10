@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/black">
+    android:background="@drawable/fondo">
 
     <LinearLayout
         android:id="@+id/main"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="60dp"
-            android:text="Factura"
+            android:text="Compra"
             android:textColor="@color/white"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -56,7 +56,7 @@
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre de la empresa o cliente que realiza la compra."
+            android:text="Nombre completo."
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -88,7 +88,7 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Direccion de la empresa o cliente que realiza la compra."
+            android:text="Departamento."
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -100,7 +100,7 @@
             android:layout_height="45dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/btn_txtarea"
-            android:hint="  Direccion"
+            android:hint="  Departamento"
             android:inputType="text"
             android:maxLines="1"
             android:singleLine="true"
@@ -121,7 +121,7 @@
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Numero de la factura"
+            android:text="Descripcion detallada bienes"
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -133,7 +133,7 @@
             android:layout_marginBottom="50dp"
             android:textColor="@android:color/black"
             android:background="@drawable/btn_txtarea"
-            android:hint="  Numero factura"
+            android:hint="  Descripcion"
             android:inputType="text"
             android:maxLines="1"
             android:singleLine="true"
@@ -154,7 +154,7 @@
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fecha emision"
+            android:text="Precio"
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -166,7 +166,7 @@
             android:textColor="@android:color/black"
             android:layout_marginBottom="50dp"
             android:background="@drawable/btn_txtarea"
-            android:hint="  Fecha emision"
+            android:hint="  Precio"
             android:inputType="text"
             android:maxLines="1"
             android:singleLine="true"
@@ -187,7 +187,7 @@
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Precio total"
+            android:text="Razon de compra"
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -199,7 +199,7 @@
             android:textColor="@android:color/black"
             android:layout_marginBottom="80dp"
             android:background="@drawable/btn_txtarea"
-            android:hint="  Precio"
+            android:hint="  Razon compra"
             android:inputType="text"
             android:maxLines="1"
             android:singleLine="true"
@@ -214,14 +214,12 @@
             android:layout_weight="1"
             android:backgroundTint="@color/green"
             android:text="Regresar"
-            android:textColor="#F8F8F8"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.81"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.675" />
-
         <Button
             android:id="@+id/btnSiguiente"
             android:layout_width="124dp"
@@ -229,7 +227,6 @@
             android:layout_weight="1"
             android:backgroundTint="@color/green"
             android:text="Generar"
-            android:textColor="#FAFAFA"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.81"
